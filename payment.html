@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment | The Writers Cafe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="form-page">
+    <nav>
+        <div class="nav-brand">
+            <h1>The Writers Cafe</h1>
+            <span class="nav-tag">Secure checkout experience</span>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="login page.html">Login</a></li>
+            <li><a href="payment.html">Payment</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="form-section">
+        <div class="form-card">
+            <h2>Payment Details</h2>
+            <p>Fill in your card information to confirm the order. This demo validates entries and shows a success state.</p>
+
+            <form class="payment-form">
+                <div class="form-control">
+                    <label for="fullName">Full name</label>
+                    <input id="fullName" name="fullName" type="text" placeholder="Aisha Kumar" required>
+                </div>
+                <div class="form-control">
+                    <label for="email">Email address</label>
+                    <input id="email" name="email" type="email" placeholder="you@example.com" required>
+                </div>
+                <div class="form-control">
+                    <label for="cardNumber">Card number</label>
+                    <input id="cardNumber" name="cardNumber" type="text" inputmode="numeric" placeholder="1234 5678 9012 3456" required>
+                </div>
+                <div class="form-control">
+                    <label for="expiry">Expiry date</label>
+                    <input id="expiry" name="expiry" type="text" placeholder="MM/YY" required>
+                </div>
+                <div class="form-control">
+                    <label for="cvv">CVV</label>
+                    <input id="cvv" name="cvv" type="text" inputmode="numeric" placeholder="123" required>
+                </div>
+                <div class="form-control">
+                    <label for="amount">Amount</label>
+                    <input id="amount" name="amount" type="text" value="₹745" readonly>
+                </div>
+                <button class="btn" type="submit">Pay Now</button>
+                <div class="message payment-result" id="payment-message"></div>
+            </form>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="footer-copy">
+            <h2>Need help?</h2>
+            <p>Reach out to support at hello@writerscafe.com or call +91 98765 43210.</p>
+        </div>
+        <p class="footer-note">© 2026 The Writers Cafe</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
